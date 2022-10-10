@@ -1,13 +1,12 @@
 import React from 'react';
 
-
-
-const Topics = () => {
+const Topic = ({topic}) => {
+    console.log(topic)
     return (
         <div>
             
         </div>
-    )
+    );
 };
 
-export default Topics;
+export default Topic;
