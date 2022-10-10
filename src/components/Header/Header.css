@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 140px;
+}
+.menu{
+    color: #1a1919;
+    text-decoration: none;
+    font-size: 17px;
+    /* padding: 0 20px; */
+    margin-left: 36px;
+}
