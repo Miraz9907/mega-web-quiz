@@ -15,27 +15,20 @@ const Topic = ({ topic }) => {
       />
       <div className="flex flex-col justify-between p-6 space-y-8">
         <div className="space-y-2">
-          <h2 className="text-3xl font-semibold tracking-wide">
-            {name}
-          </h2>
+          <h2 className="text-3xl font-semibold tracking-wide">{name}</h2>
           <div className="flex justify-between items-center">
-          <p className="text-white">
-            Questions: {total}
-          </p>
-          <button
-          type="button"
-          className="flex items-center justify-center w-50 px-3 py-2 font-semibold hover:bg-pink-600 hover:text-white rounded-md bg-white text-gray-900"
-        >
-          Start Quiz 
-          <ArrowRightIcon className="h-6 w-6 m-1 text-gray-900  "/>
-        </button>
+            <p className="text-white">Questions: {total}</p>
+            <button
+              type="button"
+              className="flex items-center justify-center w-50 px-3 py-2 font-semibold hover:bg-pink-600 hover:text-white rounded-md bg-white text-gray-900"
+            >
+              Start Quiz
+              <ArrowRightIcon className="h-6 w-6 m-1 text-gray-900  " />
+            </button>
           </div>
-          
         </div>
-        
       </div>
     </div>
-    
   );
 };
 
