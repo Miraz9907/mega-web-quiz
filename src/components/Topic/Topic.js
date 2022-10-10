@@ -5,6 +5,13 @@ import { useNavigate } from "react-router-dom";
 const Topic = ({ topic }) => {
   const { logo, name, total, id } = topic;
 
+  const navigate = useNavigate();
+  const handleNavigate = () =>{
+    navigate(`/topic/${id}`)
+
+  }
+
+
  
   return (
     <div className="max-w-xs rounded-md shadow-md bg-gray-900 text-white">
@@ -18,7 +25,7 @@ const Topic = ({ topic }) => {
           <h2 className="text-3xl font-semibold tracking-wide">{name}</h2>
           <div className="flex justify-between items-center">
             <p className="text-white">Questions: {total}</p>
-            <button
+            <button onClick={handleNavigate}
               type="button"
               className="flex items-center justify-center w-50 px-3 py-2 font-semibold hover:bg-pink-600 hover:text-white rounded-md bg-white text-gray-900"
             >
