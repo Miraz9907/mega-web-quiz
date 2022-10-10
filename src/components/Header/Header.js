@@ -1,37 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+
 
 import "./Header.css";
 
 const Header = () => {
-//   const [open, setOpen] = useState(false);
 
-//   return (
-//     <nav>
-//       <div className="h-6 w-6 md:hidden " onClick={() => setOpen(!open)}>
-//         {open ? <XMarkIcon /> : <Bars3Icon />}
-//       </div>
-//       <div
-//         className={` bg-purple-200 w-full md:flex justify-center absolute md:static  duration-500 ease-in ${
-//           open ? "top-6" : "top-[-120px]"
-//         }`}
-//       >
-//         <div>
-//           <h1>Mega Web Quiz</h1>
-//         </div>
-
-//         <div className="">
-//           <Link to="/home">Home</Link>
-//           <Link to="/topics">Topics</Link>
-//           <Link to="/statistic">Statistic</Link>
-//           <Link to="/blog">Blog</Link>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-
-const [isMenuOpen, setIsMenuOpen] = useState(false)
+const [open, setOpen] = useState(false)
 
     return (
         <div className='bg-slate-600  px-4 py-5 mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-8'> 
@@ -85,7 +60,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
               aria-label='Open Menu'
               title='Open Menu'
               className='p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50'
-              onClick={() => setIsMenuOpen(true)}
+              onClick={() => setOpen(true)}
             >
               <svg className='w-5 text-black' viewBox='0 0 24 24'>
                 <path
@@ -102,7 +77,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
                 />
               </svg>
             </button>
-            {isMenuOpen && (
+            {open && (
               <div className='absolute top-0 left-0 w-full'>
                 <div className='p-5 bg-white border rounded shadow-sm'>
                   <div className='flex items-center justify-between mb-4'>
@@ -121,7 +96,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
                         aria-label='Close Menu'
                         title='Close Menu'
                         className='p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline'
-                        onClick={() => setIsMenuOpen(false)}
+                        onClick={() => setOpen(false)}
                       >
                         <svg className='w-5 text-gray-600' viewBox='0 0 24 24'>
                           <path
