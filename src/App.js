@@ -36,6 +36,9 @@ function App() {
 
         {
           path: '/statistic',
+          loader: ()=>{
+            return fetch('https://openapi.programming-hero.com/api/quiz');
+          },
           element: <Statistic></Statistic>
         },
 
@@ -45,6 +48,10 @@ function App() {
         },
 
       ]
+      
+    },
+    {
+      path: '*', element:<div>This Route in not found</div>
     }
   ])
   return (

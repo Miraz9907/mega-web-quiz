@@ -7,7 +7,7 @@ const Topics = () => {
 
     const topics = useLoaderData();
     const {data} =topics;
-    // console.log(data)
+    // console.log(topics)
     
     return (
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-3  m-4 justify-center'>
@@ -17,6 +17,7 @@ const Topics = () => {
                      topic ={topic}
                 ></Topic>)
             }
+            
            
         </div>
     );
