@@ -5,7 +5,7 @@ import { ResponsiveContainer, PieChart, Pie,BarChart, Bar,XAxis, YAxis, Cartesia
 const Statistic = () => {
     const topic = useLoaderData();
     const {data} = topic;
-    console.log(data);
+    // console.log(data);
     return (
       <div className="flex flex-col justify-center">
         <h2>This is statistis component</h2>

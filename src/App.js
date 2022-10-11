@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
+import NotFound from './components/NotFound/NotFound';
 import Statistic from './components/Statistic/Statistic';
 import TestQuiz from './components/TestQuiz/TestQuiz';
 import Topics from './components/Topics/Topics';
@@ -51,7 +52,7 @@ function App() {
       
     },
     {
-      path: '*', element:<div>This Route in not found</div>
+      path: '*', element: <NotFound></NotFound>
     }
   ])
   return (
