@@ -38,7 +38,7 @@ const Question = ({quiz,total}) => {
         
       
         
-        <div className="my-4 mx-8 border-2 bg-sky-900 p-5 rounded-lg">
+        <div className="my-16 mx-24 border-2 bg-sky-900 p-5 rounded-lg">
         <div className="flex justify-between">
           <h1 className="mb-10 mt-5 font-bold text-xl text-white">Question no. {question}</h1>
           <button type="btn" className="" onClick={handleBtn}>
@@ -57,7 +57,7 @@ const Question = ({quiz,total}) => {
                   type="radio"
                   value={options[0]}
                   name="list-radio"
-                  className="w-4 h-4 mr-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  className="w-4 h-4 mr-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-black dark:focus:ring-black dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
                 />
                
                 <label className="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">
@@ -72,7 +72,7 @@ const Question = ({quiz,total}) => {
                   type="radio"
                   value={options[1]}
                   name="list-radio"
-                  className="w-4 h-4 mr-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  className="w-4 h-4 mr-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-black dark:focus:ring-black dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
                 />
                 <label className="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">
                   {options[1]}
@@ -86,7 +86,7 @@ const Question = ({quiz,total}) => {
                   type="radio"
                   value={options[2]}
                   name="list-radio"
-                  className="w-4 h-4 mr-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  className="w-4 h-4 mr-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-black dark:focus:ring-black dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
                 /> 
                 <label className="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">
                   {options[2]}
@@ -100,7 +100,7 @@ const Question = ({quiz,total}) => {
                   type="radio"
                   value={options[3]}
                   name="list-radio"
-                  className="w-4 h-4 mr-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                  className="w-4 h-4 mr-2 text-blue-600 bg-gray-100 border-gray-300 focus:ring-black dark:focus:ring-black dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
                 />
                 <label
                   //   for="horizontal-list-radio-passport"
