@@ -7,9 +7,11 @@ const Question = ({quiz,total}) => {
     let count = 0;
     for(let i = 1; i<= total; i++){
          count = count + 1;
-        console.log(count, question);
+        // console.log(count, question);
         
     }
+
+   
     
 
     const handleBtn = ()=>{
@@ -42,7 +44,7 @@ const Question = ({quiz,total}) => {
           </button>
         </div>
 
-        <h3> question:{count} {question}</h3>
+        <h3 > question:{question}</h3>
         
         <div>
           <ul className="items-center w-full text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 sm:grid grid-cols-2 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
