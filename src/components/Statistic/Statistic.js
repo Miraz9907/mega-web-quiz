@@ -8,7 +8,6 @@ const Statistic = () => {
     
     return (
       <div className="flex flex-col justify-center lg:mx-10 sm:mx-0">
-        <h2>This is statistis component</h2>
         <div
           style={{ width: "100%", height: 300 }}
           className="my-4 "

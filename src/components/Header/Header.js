@@ -19,14 +19,7 @@ const [open, setOpen] = useState(false)
             </span>
           </Link>
           <ul className=' items-center hidden space-x-8 lg:flex'>
-            {/* <li>
-              <Link
-                to='/'
-                className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
-              >
-                Home
-              </Link>
-            </li> */}
+           
             <li>
               <Link
                 to='/'
@@ -106,14 +99,7 @@ const [open, setOpen] = useState(false)
                   </div>
                   <nav>
                     <ul className='space-y-4'>
-                        {/* <li>
-                            <Link
-                            to='/'
-                            className='font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400'
-                            >
-                            Home
-                            </Link>
-                        </li> */}
+                        
                         <li>
                             <Link
                             to='/'

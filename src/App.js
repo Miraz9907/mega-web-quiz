@@ -1,57 +1,54 @@
-// import logo from './logo.svg';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog/Blog';
 import NotFound from './components/NotFound/NotFound';
 import Statistic from './components/Statistic/Statistic';
 import TestQuiz from './components/TestQuiz/TestQuiz';
-// import Topic from './components/Topic/Topic';
 import Topics from './components/Topics/Topics';
 import Main from './layouts/Main';
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: <Main></Main>,
       errorElement: <NotFound></NotFound>,
-      children:[
+      children: [
         {
-          path: '/',
-          loader: () =>{
-            return fetch('https://openapi.programming-hero.com/api/quiz');
+          path: "/",
+          loader: () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
           },
-          element: <Topics></Topics>
+          element: <Topics></Topics>,
         },
         {
-          path:'/topic/:topicId',
-          loader: async({params}) =>{
-            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
+          path: "/topic/:topicId",
+          loader: async ({ params }) => {
+            return fetch(
+              `https://openapi.programming-hero.com/api/quiz/${params.topicId}`
+            );
           },
-          element: <TestQuiz></TestQuiz>
-
+          element: <TestQuiz></TestQuiz>,
         },
 
         {
-          path: '/statistic',
-          loader: ()=>{
-            return fetch('https://openapi.programming-hero.com/api/quiz');
+          path: "/statistic",
+          loader: () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
           },
-          element: <Statistic></Statistic>
+          element: <Statistic></Statistic>,
         },
 
         {
-          path: '/blog',
-          element: <Blog></Blog>
+          path: "/blog",
+          element: <Blog></Blog>,
         },
-
-      ]
-      
-    }
-  ])
+      ],
+    },
+  ]);
   return (
     <div>
-      <RouterProvider router = {router}></RouterProvider>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
