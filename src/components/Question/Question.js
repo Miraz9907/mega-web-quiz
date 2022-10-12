@@ -47,6 +47,7 @@ const Question = ({ quiz, inx }) => {
         draggable: true,
         progress: undefined,
         theme: "light",
+        
       });
     }
   };
