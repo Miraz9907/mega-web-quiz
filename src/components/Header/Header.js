@@ -22,7 +22,7 @@ const [open, setOpen] = useState(false)
            
             <li>
               <Link
-                to='/'
+                to='/topics'
                 className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
               >
                 Topics
@@ -45,7 +45,7 @@ const [open, setOpen] = useState(false)
               </Link>
             </li>
           </ul>
-          <div className='lg:hidden z-10'>
+          <div className='lg:hidden z-50'>
             <button
               aria-label='Open Menu'
               title='Open Menu'
@@ -102,7 +102,7 @@ const [open, setOpen] = useState(false)
                         
                         <li>
                             <Link
-                            to='/'
+                            to='/topics'
                             className='font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400'
                             >
                             Topics
@@ -121,7 +121,7 @@ const [open, setOpen] = useState(false)
                           to='/blog'
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                          Blog
+                          Blogs
                         </Link>
                       </li>
                     </ul>

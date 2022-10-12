@@ -9,6 +9,7 @@ const Home = () => {
         test is not official, it's just a nice way to see how much you know, or
         don't know, about React, javascript, CSS, Git.
       </p>
+      
     </div>
   );
 };
