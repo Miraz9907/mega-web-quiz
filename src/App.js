@@ -2,10 +2,10 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog/Blog';
-import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
 import Statistic from './components/Statistic/Statistic';
 import TestQuiz from './components/TestQuiz/TestQuiz';
+// import Topic from './components/Topic/Topic';
 import Topics from './components/Topics/Topics';
 import Main from './layouts/Main';
 
@@ -14,13 +14,15 @@ function App() {
     {
       path: '/',
       element: <Main></Main>,
+      errorElement: <NotFound></NotFound>,
       children:[
+      //  {
+      //   path: '/home',
+      //   element:<Home></Home>
+
+      //  },
         {
-          path: '/home',
-          element:<Home></Home>
-        },
-        {
-          path: '/topics',
+          path: '/',
           loader: () =>{
             return fetch('https://openapi.programming-hero.com/api/quiz');
           },
@@ -51,9 +53,9 @@ function App() {
       ]
       
     },
-    {
-      path: '*', element: <NotFound></NotFound>
-    }
+    // {
+    //   path: '*', element: <NotFound></NotFound>
+    // }
   ])
   return (
     <div>

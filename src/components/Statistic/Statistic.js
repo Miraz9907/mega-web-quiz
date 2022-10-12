@@ -7,11 +7,11 @@ const Statistic = () => {
     const {data} = topic;
     // console.log(data);
     return (
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center lg:mx-10 sm:mx-0">
         <h2>This is statistis component</h2>
         <div
           style={{ width: "100%", height: 300 }}
-          className="my-4 lg:px-14 sm:mx-5"
+          className="my-4 "
         >
           <ResponsiveContainer>
             <PieChart>
@@ -23,7 +23,7 @@ const Statistic = () => {
 
         <div
           style={{ width: "100%", height: 300 }}
-          className="mt-10 lg:px-14 sm:mx-5"
+          className="mt-10  "
         >
           <ResponsiveContainer>
             <BarChart width={600} height={300} data={data}>
@@ -39,7 +39,7 @@ const Statistic = () => {
 
         <div
           style={{ width: "100%", height: 300 }}
-          className="mt-10 lg:px-14 sm:mx-5"
+          className="mt-10  "
         >
           <ResponsiveContainer>
             <LineChart

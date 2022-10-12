@@ -1,19 +1,11 @@
 import React, { useState } from 'react';
 import { EyeIcon } from '@heroicons/react/24/solid';
 
-const Question = ({quiz,total}) => {
+const Question = ({quiz,inx}) => {
+  console.log(inx)
     const {correctAnswer, options, question} = quiz;
     // console.log(total);
-    let count = 0;
-    for(let i = 1; i<= total; i++){
-         count = count + 1;
-        // console.log(count, question);
-        
-    }
-
-   
     
-
     const handleBtn = ()=>{
         const rightAns = JSON.stringify(correctAnswer);
        alert("Correct ans is: " + rightAns);
@@ -40,7 +32,7 @@ const Question = ({quiz,total}) => {
         
         <div className="my-16 mx-24 border-2 bg-sky-900 p-5 rounded-lg">
         <div className="flex justify-between">
-          <h1 className="mb-10 mt-5 font-bold text-xl text-white">Question no. {question}</h1>
+          <h1 className="mb-10 mt-5 font-bold text-xl text-white">Question no.{inx+1} {question.slice(3, -4)}</h1>
           <button type="btn" className="" onClick={handleBtn}>
             <EyeIcon className="w-7 h-7 text-black"></EyeIcon>
           </button>

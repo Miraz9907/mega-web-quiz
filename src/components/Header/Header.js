@@ -6,8 +6,8 @@ const Header = () => {
 const [open, setOpen] = useState(false)
 
     return (
-        <div className='bg-slate-600  px-4 py-5 mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-8'> 
-        <div className='relative flex items-center justify-between'> 
+      <div className='bg-slate-600  px-4 py-5 mx-auto sm:max-w-xl md:max-w-full md:px-24 lg:px-8'> 
+        <div className='sticky flex items-center justify-between'> 
           <Link
             to='/'
             aria-label='Mega Web Quiz'
@@ -19,17 +19,17 @@ const [open, setOpen] = useState(false)
             </span>
           </Link>
           <ul className=' items-center hidden space-x-8 lg:flex'>
-            <li>
+            {/* <li>
               <Link
-                to='/home'
+                to='/'
                 className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
               >
                 Home
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
-                to='/topics'
+                to='/'
                 className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400'
               >
                 Topics
@@ -106,17 +106,17 @@ const [open, setOpen] = useState(false)
                   </div>
                   <nav>
                     <ul className='space-y-4'>
-                        <li>
+                        {/* <li>
                             <Link
-                            to='/home'
+                            to='/'
                             className='font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400'
                             >
                             Home
                             </Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link
-                            to='/topics'
+                            to='/'
                             className='font-medium tracking-wide text-black transition-colors duration-200 hover:text-deep-purple-accent-400'
                             >
                             Topics
@@ -146,6 +146,8 @@ const [open, setOpen] = useState(false)
           </div>
         </div>
       </div>
+
+        
     );
 };
 
