@@ -8,7 +8,6 @@ const Topics = () => {
 
     const topics = useLoaderData();
     const {data} =topics;
-    // console.log(topics)
     
     return (
         <div>

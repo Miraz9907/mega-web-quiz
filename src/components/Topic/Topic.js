@@ -11,8 +11,6 @@ const Topic = ({ topic }) => {
 
   }
 
-
- 
   return (
     <div className="max-w-xs rounded-md shadow-md bg-gray-900 text-white">
       <img

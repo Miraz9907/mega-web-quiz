@@ -16,11 +16,6 @@ function App() {
       element: <Main></Main>,
       errorElement: <NotFound></NotFound>,
       children:[
-      //  {
-      //   path: '/home',
-      //   element:<Home></Home>
-
-      //  },
         {
           path: '/',
           loader: () =>{
@@ -52,10 +47,7 @@ function App() {
 
       ]
       
-    },
-    // {
-    //   path: '*', element: <NotFound></NotFound>
-    // }
+    }
   ])
   return (
     <div>
